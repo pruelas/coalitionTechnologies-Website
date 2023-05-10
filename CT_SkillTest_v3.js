@@ -1,51 +1,76 @@
-window.onscroll = function(){
-    stickNav();
-}
+// window.onscroll = function(){
+//     stickNav();
+// }
 
-var navbar = document.getElementById("stickyNav")
+// var navbar = document.getElementById("stickyNav")
 
-var sticky = navbar.offsetTop;
+// var sticky = navbar.offsetTop;
 
-function stickNav(){
-    if(window.pageYOffset >= sticky){
-        navbar.classList.add("sticky")
+// function stickNav(){
+//     if(window.pageYOffset >= sticky){
+//         navbar.classList.add("sticky")
 
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
-
+//     } else {
+//         navbar.classList.remove("sticky");
+//     }
+// }
 let slideIndex = 0;
 showThumbnails(slideIndex);
 
 function showThumbnails(n) {
   let i;
   let thumbnails = document.getElementsByClassName("thumbnail");
-  console.log(thumbnails[0]);
-  carousel.appendChild
+  let thumbnailsLength = thumbnails.length;
+
   let dots = document.getElementsByClassName("dot");
+  let carousel = document.getElementById("carousel");
+  let currActive = 0;
 
-//   if (n > thumbnails.length) {slideIndex = 1}    
- 
-//   if (n < 1) {slideIndex = thumbnails.length}
-//   for (i = 0; i < thumbnails.length; i++) {
-//     thumbnails[i].style.display = "none";  
-//   }
-
- //load first four images, starting from 
- let carousel = document.getElementById("carousel");
- carousel.innerHTML = "";
- for(i = n; i < dots.length+n; i++){
-    console.log(i%dots.length + " -- " + thumbnails[i%dots.length]);
-    carousel.append(thumbnails[0]);
-    // carousel.appendChild(thumbnails[i%dots.length]);
-    console.log("appended thumbnail: " + i);
- }
-
-   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" active", "");
+  for(j = 0; j < dots.length; j++){
+    if(dots[j].classList.contains('active')){
+        dots[j].classList.remove('active');
+        currActive = j;
+        break;
+    }
   }
 
-//  thumbnails[slideIndex-1].style.display = "block";  
-  dots[slideIndex].className += " active";
+  if(n > currActive){
+    for(i = currActive; i < n; i++){
+        carousel.appendChild(thumbnails[0]);
+    }
+  }else if( n < currActive){
+    console.log('goingBackwards');
+    for(i = currActive; i>n; i--){
+        carousel.prepend(thumbnails[thumbnailsLength-1]);
+    }
+  }
+
+  dots[n].classList.add('active');
+}
+
+function showContent(containerTab){
+    let showTab = document.getElementById(containerTab);
+    showTab.classList.add('selected');
+    showTab.style.display = 'flex';
+
+    if(containerTab == 'contentTab1Container'){
+        let hideContent = document.getElementById('contentTab2Container');
+        hideContent.style.display = 'none';
+
+        let hideTab = document.getElementById('tab2');
+        hideTab.classList.remove('selected');
+
+        let selectTab = document.getElementById('tab1');
+        selectTab.classList.add('selected');
+
+    }else{
+        let hideContent = document.getElementById('contentTab1Container');
+        hideContent.style.display = 'none';
+
+        let hideTab = document.getElementById('tab1');
+        hideTab.classList.remove('selected');
+
+        let selectTab = document.getElementById('tab2');
+        selectTab.classList.add('selected');
+    }
 }

@@ -74,21 +74,21 @@
         <img src="carouselBackground.png" alt="">
         <div class="carouselWrapper">
             <div class = "carousel" id="carousel">
-                <div class="thumbnail">
+                <div class="thumbnail" id = 'thumbnail0'>
                     <img src="Group 10 copy.png" alt="">
                 </div>
-                <div class="thumbnail">
+                <div class="thumbnail" id = 'thumbnail1'>
                     <img src="Group 8 copy.png" alt="">
                 </div>
-                <div class="thumbnail">
+                <div class="thumbnail" id='thumbnail2'>
                     <img src="Group 10.png" alt="">
                 </div>
-                <div class="thumbnail">
+                <div class="thumbnail" id="thumbnail3">
                     <img src="Group 8.png" alt="">
                 </div>
             </div>
             <div class = "dots" style="text-align:center">
-                <span class="dot" onclick="showThumbnails(0)"></span>
+                <span class="dot active" onclick="showThumbnails(0)"></span>
                 <span class="dot" onclick="showThumbnails(1)"></span>
                 <span class="dot" onclick="showThumbnails(2)"></span>
             </div>
@@ -108,80 +108,80 @@
                 Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.
             </div>
         </div>
-        <div class="tabs">
-            <div class="tabsContainer" >
-                <div class="tab1 selected">
-                    MOUNTAIN 1
-                </div>
-                <div class="tab2">
-                    MOUNTAIN 2
+        <dib class="tabsWrapper">
+            <div class="tabs">
+                <div class="tabsContainer" >
+                    <div class="tab1 selected" id="tab1" onclick="showContent('contentTab1Container')">
+                        MOUNTAIN 1
+                    </div>
+                    <div class="tab2"  id="tab2" onclick="showContent('contentTab2Container')">
+                        MOUNTAIN 2
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="tabContent">
-            <div class="contentTab1Container">
-                <img src="tab1Background.png" alt="">
-
-                <div class="textContentContainer">
-                    <div class = "textContent">
-                        <div class="schedule">
-                            SCHEDULE
-                        </div>
-                        <div class="scheduleDates">
-                            <div class="dates">
-                                25 Nov 2016
-                                <br>
-                                28 Nov 2016
-                                <br><br>
-                                18 Dec 2016
-                                <br><br>
-                                7 Jan 2017
+            <div class="tabContent">
+                <div id="contentTab1Container">
+                    <img src="tab1Background.png" alt="">
+                    <div class="textContentContainer">
+                        <div class = "textContent">
+                            <div class="schedule">
+                                SCHEDULE
                             </div>
-                            <div class="event">
-                                Vestibulum viverra
-                                <br>
-                                Vestibulum viverra
-                                <br><br>
-                                Vestibulum viverra
-                                <br><br>
-                                Vestibulum viverra
+                            <div class="scheduleDates">
+                                <div class="dates">
+                                    25 Nov 2016
+                                    <br>
+                                    28 Nov 2016
+                                    <br><br>
+                                    18 Dec 2016
+                                    <br><br>
+                                    7 Jan 2017
+                                </div>
+                                <div class="event">
+                                    Vestibulum viverra
+                                    <br>
+                                    Vestibulum viverra
+                                    <br><br>
+                                    Vestibulum viverra
+                                    <br><br>
+                                    Vestibulum viverra
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentTab2Container">
+                    <img src="tab2Background.png" alt="">
+                    <div class="textContentContainer">
+                        <div class = "textContent">
+                            <div class="schedule">
+                                SCHEDULE
+                            </div>
+                            <div class="scheduleDates">
+                                <div class="dates">
+                                    17 Nov 2016
+                                    <br><br>
+                                    13 Dec 2016
+                                    <br>
+                                    28 Dec 2016
+                                    <br><br>
+                                    9 Feb 2017
+                                </div>
+                                <div class="event">
+                                    Vestibulum viverra
+                                    <br><br>
+                                    Vestibulum viverra
+                                    <br>
+                                    Vestibulum viverra
+                                    <br><br>
+                                    Vestibulum viverra
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="contentTab2Container">
-                <img src="tab2Background.png" alt="">
-                <div class="textContentContainer">
-                    <div class = "textContent">
-                        <div class="schedule">
-                            SCHEDULE
-                        </div>
-                        <div class="scheduleDates">
-                            <div class="dates">
-                                17 Nov 2016
-                                <br><br>
-                                13 Dec 2016
-                                <br>
-                                28 Dec 2016
-                                <br><br>
-                                9 Feb 2017
-                            </div>
-                            <div class="event">
-                                Vestibulum viverra
-                                <br><br>
-                                Vestibulum viverra
-                                <br>
-                                Vestibulum viverra
-                                <br><br>
-                                Vestibulum viverra
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </dib>
     </div>
 
 
@@ -204,8 +204,8 @@
     </div>
 </footer>
 
-<!-- <script src="CT_SkillTest_v3.js">
+<script src="CT_SkillTest_v3.js">
     
-</script> -->
+</script>
 
 </html>
