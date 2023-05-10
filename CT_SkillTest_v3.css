@@ -65,9 +65,9 @@
     }
 
     .nav{
-        font-size: 1.6vw;
+        font-size: 1vw;
         letter-spacing: .3vw;
-        line-height: 2.6vw;
+        line-height: 1.6vw;
         gap: 5vw;
     }
 
@@ -76,6 +76,30 @@
     }
 
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1350px){
+    #hero{
+        top:2vw;
+        width: 65%;
+    }
+
+    .logo > img{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .nav{
+        font-size: 1vw;
+        letter-spacing: .3vw;
+        line-height: 1.6vw;
+        gap: 5vw;
+    }
+
+    .navItem{
+        border-bottom: solid white .04vw;
+    }    
+}
+
 
 
 /* end of first page */
@@ -164,6 +188,39 @@
         gap: .5vw;
     }
 
+    .logo > img{
+        /* padding-top: 15vw; */
+        margin-top: -1vw;
+    }
+
+    #upperText{
+        font-size: 2.5vw;
+        letter-spacing: .15vw;
+    }
+
+    #lowerText{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1350px){
+    #stickyNav{
+        padding:2vw 0vw;
+    }
+    
+    #stickyNavWrapper{
+        width: 65%;
+    }
+
+    .logoWrapper{
+        gap: .5vw;
+    }
+
+    .logo > img{
+        /* padding-top: 15vw; */
+        margin-top: -1vw;
+    }
+
     #upperText{
         font-size: 2.5vw;
         letter-spacing: .15vw;
@@ -239,8 +296,8 @@
 @media screen and (max-width:768px){
 
     .history{
+        top: 2vw;
         width: 59%;
-        margin-top: -15vmin;
     }
 
     #sectionNumber{
@@ -255,8 +312,32 @@
     }
     
     .sectionText{
-        width: 85%;
-        font-size: 1.2vw;
+        width: 51vw;
+        font-size: 1vw;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1350px){
+
+    .history{
+        top: 2vw;
+        width: 59%;
+    }
+
+    #sectionNumber{
+        font-size: 7vw;
+        letter-spacing: -.02em;
+    }
+    
+    #sectionTitle{
+        font-size: 1.5vw;
+        margin-left: -.9em;
+        margin-bottom: 1.8vw;
+    }
+    
+    .sectionText{
+        width: 51vw;
+        font-size: 1vw;
     }
 }
 
@@ -319,13 +400,30 @@
     }
 
     .thumbnail > img{
-        height: 1.5em;
+        height: 7vw;
+    }
+
+    .dot{
+        height: 1vw;
+        width: 1vw;
+        margin: 0 .2vw;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1350px) {
+    .carousel{
+        gap: 1vw;
+    }
+
+    .thumbnail > img{
+        height: 7vw;
         /* width: ; */
     }
 
     .dot{
         height: 1vw;
         width: 1vw;
+        margin: 0 .2vw;
     }
 }
 
@@ -475,8 +573,9 @@
     }
 
     .sectionText2{
-        font-size: 1.2vw;
-        margin-left: 2vw;
+        width: 38vw;
+        font-size: 1vw;
+        margin-left: 1.5vw;
         line-height: 1.5vw;
     }
     .tabsWrapper{
@@ -558,6 +657,53 @@
         order:3;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width:1350px){
+    .climbText{
+        padding-bottom: 1.5vw;
+    }
+
+    .sectionNumber2{
+        font-size: 7vw;
+    }
+
+    .sectionTitle2{
+        font-size: 1.5vw;
+    }
+
+    .sectionText2{
+        font-size: 1vw;
+        margin-left: 1.5vw;
+        line-height: 1.5vw;
+        width: 38vw;
+
+    }
+
+    .tabsContainer{
+        font-size: 1vw;
+    }
+
+    .tab{
+        padding: .5vw 1vw;
+    }
+
+    .textContent{
+        margin-top: 5.5vw;
+        margin-left: 2vw;
+        width: 30%;
+        padding: 1.3vw 2vw;
+    }
+
+    .schedule{
+        font-size: 2vw;
+    }
+
+    .scheduleDates{
+        font-size: 1vw;
+        padding-top: 1vw;
+    }
+}
+
 /* end of team section */
 
 /* start of footer */
@@ -617,6 +763,22 @@ footer{
     footer{
         border-top: 1px solid black;
     }
+
+    .logoWrapper{
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .footer{
+        padding: 1vw 0vw;
+    }
+
+    .footerText{
+        font-size: .9vw;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1350px){
 
     .logoWrapper{
         width: 5vw;
