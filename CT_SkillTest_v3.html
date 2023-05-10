@@ -14,27 +14,26 @@
 </head>
 <body>
 
-    <div class="heroContainer">
+    <div id="heroContainer">
         <img src="Image.png" alt="">
-        <div class = "hero">
+        <div id = "hero">
 
-            <div id = "logo">
+            <div class = "logo">
                 <img src="Logo.png" alt="">
             </div>
     
-            <div id="nav">
-                <div id = "navItem">01. HISTORY</div>
-    
-                <div id = "navItem">02. TEAM</div>
+            <div class="nav">
+                <div class = "navItem"> <a href="#historyContainer">01. HISTORY </a> </div>
+                <div class = "navItem"><a href="#teamContainer">02. TEAM</a></div>
             </div>
         </div>
 
     </div>
 
-    <div class = "stickyNav" id="stickyNav">
-        <div class = "navWrapper">
+    <div id="stickyNav">
+        <div id = "stickyNavWrapper">
             <div class = "logoWrapper">
-                <div class = "logoIcon">
+                <div class = "logo">
                     <img src="Logo.png" alt="">
                 </div>
                 <div class="logoText">
@@ -42,23 +41,21 @@
                         <div id="lowerText">MOUNTAINS</div>
                 </div>
             </div>
-            <div id="nav2">
-                <div id = "navItem2">01. HISTORY</div>
-                <div id = "navItem2">02. TEAM</div>
+            <div class="nav">
+                <div class = "navItem"> <a href="#historyContainer">01. HISTORY </a> </div>
+                <div class = "navItem"><a href="#teamContainer">02. TEAM</a></div>
             </div>
         </div>
 
     </div>
 
-    <div class = "historyContainer">
-
+    <div class = "historyContainer" id="historyContainer">
         <img src="historyBackground.png" alt="">
 
         <div class="history">
             <div class = "historyText">
                 <div id = "sectionNumber"> 01. </div>
                 <div id="sectionTitle"> HISTORY </div>
-                    <!-- <div id="sectionPunctuation">.</div> -->
             </div>
             <div class = "sectionText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Proin in ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est. 
@@ -96,7 +93,7 @@
 
     </div>
     
-    <div class="teamContainer">
+    <div class="teamContainer" id="teamContainer">
         <div class="climbText">
             <div class="sectionNumber2">
                 02.
@@ -111,10 +108,10 @@
         <dib class="tabsWrapper">
             <div class="tabs">
                 <div class="tabsContainer" >
-                    <div class="tab1 selected" id="tab1" onclick="showContent('contentTab1Container')">
+                    <div class="tab selected" id="tab1" onclick="showContent('contentTab1Container')">
                         MOUNTAIN 1
                     </div>
-                    <div class="tab2"  id="tab2" onclick="showContent('contentTab2Container')">
+                    <div class="tab"  id="tab2" onclick="showContent('contentTab2Container')">
                         MOUNTAIN 2
                     </div>
                 </div>
@@ -189,7 +186,7 @@
 <footer>
     <div class="footer">
         <div class="logoWrapper">
-            <div id = "logo">
+            <div class = "logo">
                 <img src="Logo.png" alt="">
             </div>
             <div class="logoText">

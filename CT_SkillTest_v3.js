@@ -1,19 +1,20 @@
-// window.onscroll = function(){
-//     stickNav();
-// }
+window.onscroll = function(){
+    stickNav();
+}
 
-// var navbar = document.getElementById("stickyNav")
+var navbar = document.getElementById("stickyNav")
 
-// var sticky = navbar.offsetTop;
+var sticky = navbar.offsetTop;
 
-// function stickNav(){
-//     if(window.pageYOffset >= sticky){
-//         navbar.classList.add("sticky")
+function stickNav(){
+    if(window.pageYOffset >= sticky){
+        navbar.classList.add("sticky")
 
-//     } else {
-//         navbar.classList.remove("sticky");
-//     }
-// }
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
 let slideIndex = 0;
 showThumbnails(slideIndex);
 
